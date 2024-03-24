@@ -1,0 +1,39 @@
+:root{
+    --color-white:white;
+    --color-purple:#230f33;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.info-bar{
+    color: var(--color-white);
+    background-color: var(--color-purple);
+}
+
+.info-bar-container{
+    display: flex;
+    justify-content: end;
+    max-width: 1100px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 10px 0;
+    
+}
+
+ul li:first-child,ul li:nth-child(2){
+    display: flex;
+    gap: 5px;
+    /* border: 1px solid red; */
+}
+li p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
