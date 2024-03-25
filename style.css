@@ -308,3 +308,51 @@ gap: 50px; */
     font-size: 13px;
     padding: 2px 5px;
 }
+
+/* banner */
+.banner{
+    color: var(--color-white);
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+
+}
+.banner-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    width: var(--mw1250);
+    justify-items: center;
+    /* border: 1px dotted red; */
+}
+.banner-card{
+    width: 600px;
+    height: 250px;
+    /* border: 1px solid red; */
+    border-radius: 25px;
+}
+.banner-card1{
+    background-image: url("https://source.unsplash.com/Xaanw0s0pMk");
+}
+.banner-card2{
+    background-image: url("https://source.unsplash.com/eOcyhe5-9sQ");
+}
+
+.banner-card h1{
+    margin:50px 0 15px 25px;
+    font-size: 35px;
+}
+.banner-card p{
+    margin:0 0 15px 25px;
+    font-size: 14px;
+}
+.banner-card button{
+    color: var(--color-white);
+    margin:0 0 15px 25px;
+    border: none;
+    padding: 10px 25px;
+    border: 2px solid var(--color-white);
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+
