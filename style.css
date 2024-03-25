@@ -205,9 +205,9 @@ li p:hover {
 
 .news-bar-container {
     /* display: flex;
-justify-content: center;
-align-items: center;
-gap: 50px; */
+    justify-content: center;
+    align-items: center;
+    gap: 50px; */
     display: grid;
     grid-template-columns: 30% 5% 30% 5% 30%;
     justify-items: center;
@@ -215,6 +215,11 @@ gap: 50px; */
     max-width: var(--mw1250);
     text-align: center;
     font-size: 14px;
+}
+
+.news-bar-container p:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .pipeline {
@@ -356,18 +361,20 @@ gap: 50px; */
 
 .trending-gift-container-lower {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     align-items: center;
 }
 
 .trending-gift-container-lower .card {
     width: 250px;
-    
+
 }
+
 .trending-gift-container-lower .card .card-pic-container img {
     width: 100%;
 }
+
 /* banner */
 .banner {
     color: var(--color-white);
