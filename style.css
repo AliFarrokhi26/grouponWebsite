@@ -1,11 +1,13 @@
-:root{
-    --color-white:white;
-    --color-white-200:rgba(255,255,255,.2);
-    --color-purple:rgb(35,15,51);
-    --color-purple-100:rgba(35,15,51);
+:root {
+    --color-white: white;
+    --color-black-500:rgba(0, 0, 0, .5);
+    --color-white-200: rgba(255, 255, 255, .2);
+    --color-purple: rgb(35, 15, 51);
+    --color-purple-100: rgba(35, 15, 51);
+    --color-green-150:rgba(0,255,0 ,.15);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
@@ -13,41 +15,44 @@
 
 /*! info-bar */
 
-.info-bar{
+.info-bar {
     color: var(--color-white);
     background-color: var(--color-purple);
     /* border: 1px solid red; */
 }
 
-.info-bar-container{
+.info-bar-container {
     display: flex;
     justify-content: end;
     max-width: 1250px;
     margin: 0 auto;
     /* border: 1px solid red; */
 }
-ul{
+
+ul {
     display: flex;
     gap: 25px;
     list-style: none;
     padding: 10px 0;
     font-size: 13px;
-    
+
 }
 
-ul li:first-child,ul li:nth-child(2){
+ul li:first-child,
+ul li:nth-child(2) {
     display: flex;
     gap: 5px;
     /* border: 1px solid red; */
 }
-li p:hover{
+
+li p:hover {
     text-decoration: underline;
     cursor: pointer;
 }
 
 /*! logo-signin */
 
-.logo-signin{
+.logo-signin {
     color: var(--color-white);
     background-color: var(--color-purple);
     width: 100%;
@@ -55,7 +60,7 @@ li p:hover{
 
 }
 
-.lego-signin-container{
+.lego-signin-container {
     max-width: 1250px;
     margin: 0 auto;
     display: flex;
@@ -64,18 +69,21 @@ li p:hover{
     /* border: 5px solid lightblue; */
 }
 
-.logo-container{
+.logo-container {
     display: flex;
     align-items: center;
     gap: 15px;
 }
-.logo-container a{
+
+.logo-container a {
     text-decoration: none;
     color: var(--color-white);
 }
-.logo-container h1:hover{
+
+.logo-container h1:hover {
     cursor: pointer;
 }
+
 /* .logo-container button{
     color: var(--color-white);
     background-color: var(--color-purple);
@@ -85,22 +93,26 @@ li p:hover{
     padding: 8px 15px;
 } */
 
-.shop-signin{
+.shop-signin {
     display: flex;
     align-items: center;
     gap: 10px;
     position: relative;
 }
 
-.fa-cart-shopping , .fa-bell{
+.fa-cart-shopping,
+.fa-bell {
     padding: 20px 10px;
     border-radius: 5px;
-    &:hover{
+
+    &:hover {
         background-color: var(--color-white-200);
         cursor: pointer;
     }
 }
-.logo-container button , .shop-signin button{
+
+.logo-container button,
+.shop-signin button {
     color: var(--color-white);
     background-color: var(--color-purple);
     border: none;
@@ -109,7 +121,7 @@ li p:hover{
     padding: 8px 15px;
     font-size: 15px;
 
-    &:hover{
+    &:hover {
         text-decoration: underline;
         cursor: pointer;
     }
@@ -129,7 +141,7 @@ li p:hover{
 } */
 
 /*! city/search */
-.city-search{
+.city-search {
     color: var(--color-white);
     background-color: var(--color-purple);
     display: flex;
@@ -140,7 +152,7 @@ li p:hover{
     /* border: 1px solid red; */
 }
 
-.city-search-container{
+.city-search-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -151,26 +163,54 @@ li p:hover{
 }
 
 
-.city-search-container button{
+.city-search-container button {
     border: none;
     background-color: var(--color-purple);
     color: var(--color-white);
     font-size: 40px;
     font-weight: bold;
-    &:hover{
+
+    &:hover {
         text-decoration: underline;
         cursor: pointer;
     }
 }
 
-.city-search-container input{
+.city-search-container input {
     width: 60%;
     padding: 10px 0;
     text-align: center;
     border-radius: 25px;
     outline: none;
-   
-    &:focus::placeholder{
+
+    &:focus::placeholder {
         color: white;
-        }
+    }
+}
+
+/*! news-bar */
+.news-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-green-150);
+    height: 50px;
+}
+.news-bar-container{
+/* display: flex;
+justify-content: center;
+align-items: center;
+gap: 50px; */
+display: grid;
+grid-template-columns: 30% 5% 30% 5% 30%;
+justify-items: center;
+align-items: center;
+max-width: 1250px;
+text-align: center;
+font-size: 14px;
+}
+.pipeline{
+    width: 1px;
+    height: 35px;
+    background-color: var(--color-black-500);
 }
