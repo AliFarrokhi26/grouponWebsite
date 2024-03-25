@@ -365,6 +365,10 @@ li p:hover {
     padding: 10px 12px;
     border-radius: 50%;
     margin: 0 2px;
+    &:hover{
+        background-color: var(--color-black-150);
+        cursor: pointer;
+    }
 }
 
 .trending-gift-container-lower {
@@ -432,4 +436,10 @@ li p:hover {
     border: 2px solid var(--color-white);
     background-color: transparent;
     border-radius: 5px;
+    &:hover{
+        transform: scale(1.1);
+        background-color: var(--color-black-500);
+        transition: all ease-in-out .5s;
+        cursor: pointer;
+    }
 }
