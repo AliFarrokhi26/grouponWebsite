@@ -2,12 +2,14 @@
     --color-white: white;
     --color-black-500: rgba(0, 0, 0, .5);
     --color-black-700: rgba(0, 0, 0, .7);
+    --color-black-150: rgba(0, 0, 0, .15);
     --color-white-200: rgba(255, 255, 255, .2);
     --color-purple: rgb(35, 15, 51);
     --color-purple-100: rgba(35, 15, 51);
     --color-red-700: rgba(255, 0, 0, .7);
     --color-green: rgb(0, 100, 0);
     --color-green-150: rgba(0, 255, 0, .15);
+    --color-orange: rgba(255, 165, 0, .15);
     --mw1250: 1250px;
 }
 
@@ -309,50 +311,110 @@ gap: 50px; */
     padding: 2px 5px;
 }
 
+/* Trending Gift */
+.trending-gift {
+    background-color: var(--color-orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.trending-gift-container {
+    width: var(--mw1250);
+    /* border: 1px solid blue; */
+
+}
+
+.trending-gift-container-upper {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    justify-items: center;
+    align-items: center;
+    padding: 15px 0;
+    /* border: 1px solid red; */
+}
+
+.page-num {
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+}
+
+.page-num h3 {
+    margin-right: 10px;
+}
+
+.page-num button {
+    border: none;
+    background-color: transparent;
+    border: 1px solid var(--color-black-150);
+    padding: 10px 12px;
+    border-radius: 50%;
+    margin: 0 2px;
+}
+
+.trending-gift-container-lower {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.trending-gift-container-lower .card {
+    width: 250px;
+    
+}
+.trending-gift-container-lower .card .card-pic-container img {
+    width: 100%;
+}
 /* banner */
-.banner{
+.banner {
     color: var(--color-white);
     margin-bottom: 100px;
     display: flex;
     justify-content: center;
-
 }
-.banner-container{
+
+.banner-container {
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     width: var(--mw1250);
     justify-items: center;
     /* border: 1px dotted red; */
 }
-.banner-card{
+
+.banner-card {
     width: 600px;
     height: 250px;
     /* border: 1px solid red; */
     border-radius: 25px;
 }
-.banner-card1{
+
+.banner-card1 {
     background-image: url("https://source.unsplash.com/Xaanw0s0pMk");
 }
-.banner-card2{
+
+.banner-card2 {
     background-image: url("https://source.unsplash.com/eOcyhe5-9sQ");
 }
 
-.banner-card h1{
-    margin:50px 0 15px 25px;
+.banner-card h1 {
+    margin: 50px 0 15px 25px;
     font-size: 35px;
 }
-.banner-card p{
-    margin:0 0 15px 25px;
+
+.banner-card p {
+    margin: 0 0 15px 25px;
     font-size: 14px;
 }
-.banner-card button{
+
+.banner-card button {
     color: var(--color-white);
-    margin:0 0 15px 25px;
+    margin: 0 0 15px 25px;
     border: none;
     padding: 10px 25px;
     border: 2px solid var(--color-white);
     background-color: transparent;
     border-radius: 5px;
 }
-
-
