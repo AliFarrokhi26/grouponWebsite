@@ -22,7 +22,7 @@
 .info-bar-container{
     display: flex;
     justify-content: end;
-    max-width: 1100px;
+    max-width: 1250px;
     margin: 0 auto;
     /* border: 1px solid red; */
 }
@@ -31,6 +31,7 @@ ul{
     gap: 25px;
     list-style: none;
     padding: 10px 0;
+    font-size: 13px;
     
 }
 
@@ -55,7 +56,7 @@ li p:hover{
 }
 
 .lego-signin-container{
-    max-width: 1100px;
+    max-width: 1250px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -88,6 +89,7 @@ li p:hover{
     display: flex;
     align-items: center;
     gap: 10px;
+    position: relative;
 }
 
 .fa-cart-shopping , .fa-bell{
@@ -111,4 +113,64 @@ li p:hover{
         text-decoration: underline;
         cursor: pointer;
     }
+}
+
+/*! dropdown */
+/* .signin-dropdown{
+    position: absolute;
+    display: block;
+    display: flex;
+
+    background-color: red;
+}
+
+.itemlist ul li{
+    text-transform: capitalize;
+} */
+
+/*! city/search */
+.city-search{
+    color: var(--color-white);
+    background-color: var(--color-purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 25px 0;
+    /* padding-bottom: 25px; */
+    /* border: 1px solid red; */
+}
+
+.city-search-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1250px;
+    gap: 20px;
+    /* border: 1px solid red; */
+}
+
+
+.city-search-container button{
+    border: none;
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    font-size: 40px;
+    font-weight: bold;
+    &:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.city-search-container input{
+    width: 60%;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 25px;
+    outline: none;
+   
+    &:focus::placeholder{
+        color: white;
+        }
 }
