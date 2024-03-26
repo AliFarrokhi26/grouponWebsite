@@ -461,3 +461,108 @@ li p:hover {
 
 
 /* footer */
+.footer-part-one{
+ background-color: #F8F7FA;   
+ /* width: 100vw; */
+}
+.ft{
+    width: var(--mw1250);
+    margin: 0 auto;
+}
+.footer-part-one-main{
+   
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0;
+    /* border: 1px solid red; */
+    &:hover{
+        cursor: pointer;
+    }
+}
+.footer-part-one-main p{
+    font-size: 12px;
+}
+
+.footer-part-two{
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    text-transform: capitalize;
+}
+.footer-part-two-main{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    /* grid-template-columns: 20% 10% 20% 20% 20% ; */
+    justify-items: center;
+    align-items: center;
+    margin: auto auto;
+    /* border: 1px solid red; */
+
+}
+.footer-columns-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 300px;
+    width: 200px;
+    margin: auto 0;
+    /* border: 1px dotted white; */
+    
+}
+.footer-columns-items h3{
+    font-size: 23px;
+    margin-bottom: 25px;
+}
+.footer-columns-items ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.footer-columns-items ul li a{
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 12px;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.help-center{
+    border: none;
+    background-color: transparent;
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+    padding: 5px 10px;
+    border-radius: 5px;
+    &:hover{
+        background-color: var(--color-black-500);
+        cursor: pointer;
+        font-weight: bold;
+        transform: scale(1.1);
+        transition: all ease-in-out .7s;
+    }
+}
+.columns2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.empty{
+    width: 1px;
+    background-color: var(--color-white);
+    height: 80%;
+}
+
+
+.footer-part-four-main{
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
